@@ -11,11 +11,11 @@ Eonia is a web-based platform that helps users prepare for the end of life by pr
     *   **Typography:** The platform uses a combination of "Lora" for headings and "Lato" for body text, creating a professional and readable experience.
     *   **Layout:** The layout is clean and modern, with a responsive design that adapts to different screen sizes.
 *   **Features:**
-    *   **Home Page:** The home page provides an overview of the platform's features and guides users to the main sections: "Memorial" and "Legal." The hero section has been updated to display the text "Plan with peace. Live with clarity. Leave with dignity." and a call-to-action button that says "Start Planning Now".
-    *   **Legal Section:** This section provides tools for creating a will, managing digital assets, and connecting with legal professionals. It features a grid of `feature-card` components to display the available tools.
+    *   **Home Page:** The home page provides an overview of the platform's features and guides users to the main sections: "Memorial" and "Legal." The hero section has been updated to display the text "Plan with peace. Live with clarity. Leave with dignity." and a call-to-action button that says "Start Planning Now". The hero section now has a background image with a semi-transparent overlay to ensure the text remains readable. The "Legal" and "Memorial" tabs now have images.
+    *   **Legal Section:** This section provides tools for creating a will, managing digital assets, and connecting with legal professionals. It features a grid of `feature-card` components to display the available tools. The subgroups in this section have been updated to: "Will," "Legal Matters," "Administrative Matters," and "Digital Asset Management."
     *   **Memorial Section:** This section allows users to create a digital memorial, plan a funeral service, and explore legacy projects. It also uses the `feature-card` component to showcase the different options.
     *   **Web Components:** The platform utilizes a custom web component called `feature-card` to create reusable and encapsulated UI elements for displaying features and tools.
 
 **Current Plan:**
 
-I have updated the hero section of the `index.html` file to match the image provided.
+I have downloaded and added the images to the "Legal" and "Memorial" feature cards on the homepage.
