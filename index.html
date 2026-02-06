@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal.css">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DKJ3C4L8TV"></script>
     <script>
@@ -35,7 +36,7 @@
             <div class="hero-content">
                 <h1>Plan with peace. Live with clarity. Leave with dignity.</h1>
                 <p>Your wishes, honored. Your loved ones, supported.</p>
-                <a href="#legal" class="cta-button">Begin Your Plan</a>
+                <a href="#" class="cta-button" id="begin-plan-btn">Begin Your Plan</a>
             </div>
         </section>
 
@@ -87,6 +88,57 @@
             </div>
         </section>
 
+        <section id="plans" class="plans-section">
+            <div class="feature-header">
+                <h2>Choose Your Plan</h2>
+                <p>Find the perfect level of support for your end-of-life planning journey. Each package is thoughtfully designed to provide peace of mind and clarity, ensuring your wishes are honored and your loved ones are supported.</p>
+            </div>
+            <div class="plans-grid">
+                <div class="plan-card">
+                    <h3>Gentle Essentials</h3>
+                    <div class="price">$99</div>
+                    <p>Core elements for recording wishes without feeling overwhelmed.</p>
+                    <ul>
+                        <li>Funeral service preferences</li>
+                        <li>Music, readings, and themes</li>
+                        <li>Simple memorial page</li>
+                        <li>Basic will for important belongings</li>
+                        <li>Key contacts and instructions</li>
+                    </ul>
+                    <a href="#" class="cta-button-outline">Choose Plan</a>
+                </div>
+                <div class="plan-card recommended">
+                    <div class="recommended-badge">Recommended</div>
+                    <h3>Complete Care</h3>
+                    <div class="price">$199</div>
+                    <p>Combines personal wishes with essential legal and medical documents.</p>
+                    <ul>
+                        <li>Everything in Gentle Essentials</li>
+                        <li>Detailed funeral plan</li>
+                        <li>Advance healthcare directive</li>
+                        <li>Lasting Power of Attorney</li>
+                        <li>Structured record of assets</li>
+                        <li>Cremation or burial support</li>
+                    </ul>
+                    <a href="#" class="cta-button">Choose Plan</a>
+                </div>
+                <div class="plan-card">
+                    <h3>Legacy Plus</h3>
+                    <div class="price">$299</div>
+                    <p>Legal planning, memorial creation, and digital continuity.</p>
+                    <ul>
+                        <li>Everything in Complete Care</li>
+                        <li>Detailed memorial page</li>
+                        <li>Digital legacy vault</li>
+                        <li>Guidance on digital profiles</li>
+                        <li>Personal Letter of Wishes</li>
+                        <li>Charitable giving guidance</li>
+                    </ul>
+                    <a href="#" class="cta-button-outline">Choose Plan</a>
+                </div>
+            </div>
+        </section>
+
         <section id="about" class="about-section">
             <div class="about-content">
                 <h2>Our Mission</h2>
@@ -98,6 +150,78 @@
     <footer>
         <p>&copy; 2024 With You. All Rights Reserved.</p>
     </footer>
+
+    <!-- Service Selection Modal -->
+    <div id="service-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Select Services</h2>
+            </div>
+            <div class="modal-intro">
+                <p>Choose one or more services below. Share your contact details so our team can follow up with the right guidance and next steps.</p>
+            </div>
+            <form id="service-form">
+                <div class="form-section">
+                    <div class="service-grid">
+                        <div class="service-item">
+                            <input type="checkbox" id="create-will" name="service" value="Create Your Will">
+                            <label for="create-will">Create Your Will</label>
+                        </div>
+                        <div class="service-item">
+                            <input type="checkbox" id="manage-assets" name="service" value="Manage Assets">
+                            <label for="manage-assets">Manage Assets</label>
+                        </div>
+                        <div class="service-item">
+                            <input type="checkbox" id="handle-legacy" name="service" value="Handle Digital Legacy">
+                            <label for="handle-legacy">Handle Digital Legacy</label>
+                        </div>
+                        <div class="service-item">
+                            <input type="checkbox" id="digital-memorial" name="service" value="Set Up a Digital Memorial">
+                            <label for="digital-memorial">Set Up a Digital Memorial</label>
+                        </div>
+                        <div class="service-item">
+                            <input type="checkbox" id="plan-funeral" name="service" value="Plan Funeral Services">
+                            <label for="plan-funeral">Plan Funeral Services</label>
+                        </div>
+                        <div class="service-item">
+                            <input type="checkbox" id="arrange-tribute" name="service" value="Arrange a Legacy Tribute">
+                            <label for="arrange-tribute">Arrange a Legacy Tribute</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-section">
+                    <label for="optional-info">Anything specific you want us to know? (Optional)</label>
+                    <textarea id="optional-info" placeholder="E.g., preferred religion/rites, timeline, budget range, or special requests."></textarea>
+                </div>
+                
+                <div class="form-section">
+                    <h3>Your Details</h3>
+                    <label for="full-name">Full Name</label>
+                    <input type="text" id="full-name" placeholder="">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="name@example.com">
+                    <label for="mobile-number">Mobile Number (Optional)</label>
+                    <input type="tel" id="mobile-number" placeholder="e.g., +65 9123 4567">
+                </div>
+
+                <div class="consent-section">
+                    <input type="checkbox" id="consent" name="consent">
+                    <label for="consent">I agree to be contacted about my selected services and understand my information will be used only to support my planning request.</label>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="cta-button">Submit Request</button>
+                    <button type="button" class="cta-button-outline" id="back-button">Back</button>
+                </div>
+            </form>
+            <div id="success-message" style="display: none;">
+                <h3>Thank you — we’ve received your request.</h3>
+                <p>We’ll contact you shortly to guide you through the next steps.</p>
+            </div>
+        </div>
+    </div>
+
 
     <script src="main.js"></script>
     <script src="feature-card.js"></script>
