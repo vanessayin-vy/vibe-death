@@ -1,0 +1,72 @@
+.acp-form {
+    display: block; /* The form itself is a block */
+}
+
+.form-step {
+    display: none; /* Hide all steps by default */
+    padding: 2rem;
+    border: 1px solid var(--primary-color-soft-blue);
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.form-step.active-step {
+    display: block; /* Show the active step */
+}
+
+.form-step h2 {
+    font-family: var(--heading-font);
+    font-size: 1.8rem;
+    color: var(--primary-color-soft-blue);
+    margin-bottom: 1.5rem;
+}
+
+.form-step label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.form-step input[type="text"],
+.form-step input[type="date"],
+.form-step textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: var(--body-font);
+    font-size: 1rem;
+}
+
+.form-step textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.form-step button {
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-right: 0.5rem; /* Space between buttons */
+}
+
+.form-step .next-btn {
+    background-color: var(--primary-color-soft-blue);
+    color: white;
+}
+
+.form-step .prev-btn {
+    background-color: transparent;
+    color: var(--text-color);
+    border: 2px solid var(--primary-color-soft-blue);
+}
+
+.form-step button[type="submit"] {
+    background-color: var(--accent-color-gentle-green);
+    color: white;
+}

@@ -22,35 +22,30 @@ This section documents the project's style, design, and features as they are imp
 *   **Layout**: Clean, uncluttered, mobile-first, and responsive, with ample white space. A subtle noise texture will be applied to the main background for a premium, tactile feel.
 *   **Iconography**: Modern, intuitive icons to enhance navigation and understanding.
 
-### Core Features
-1.  **Homepage & Navigation**: A welcoming entry point with clear navigation to all main sections.
-2.  **End-of-Life & Personal Wishes Planning**: Interactive tools to document advance care plans, living wills, and personal preferences.
-3.  **Legal & Administrative Document Support**: Wizards for creating wills, managing digital assets, and finding legal professionals.
-4.  **Funeral & Memorial Arrangements**: Tools for planning personalized and meaningful life celebrations.
-5.  **Practical Tasks at Time of Death**: Actionable checklists to manage administrative burdens during grief.
-6.  **Bereavement & Emotional Support**: A directory of counselors, support groups, and grief education resources.
-7.  **Insurance & Financial Settlement Assistance**: Guidance for navigating life insurance, CPF claims, and estate payouts.
-8.  **Caregiver Tools**: Resources to support those caring for terminally ill loved ones.
+### Core Features (Detailed)
+1.  **End-of-Life & Personal Wishes Planning**: Interactive tools for advance care plans, living wills, healthcare proxies, and documenting personal, spiritual, and palliative care wishes.
+2.  **Legal & Administrative Document Support**: Wizards for wills, estate planning, guardianship, and managing a comprehensive digital asset inventory. Includes a directory of verified legal professionals.
+3.  **Funeral & Memorial Arrangements**: Tools for planning personalized services, managing vendors, and creating digital memorials.
+4.  **Practical Tasks at Time of Death**: Actionable, time-sensitive checklists for administrative tasks like death registration and notifications.
+5.  **Bereavement & Emotional Support**: A curated directory of grief counselors, support groups, and a library of educational resources.
+6.  **Insurance & Financial Settlement Assistance**: Step-by-step guidance for navigating life insurance, CPF claims, and estate payouts.
+7.  **Caregiver Tools**: Shared scheduling, medication management, and a directory of palliative and respite care services.
 
 ### Technical Stack
 *   **Frontend**: HTML5, CSS3, JavaScript (ES6+).
 *   **Components**: Web Components for encapsulated, reusable UI elements.
 *   **Styling**: Modern CSS including Container Queries, Cascade Layers, `:has()` selector, and CSS Variables.
-*   **Security**: End-to-end encryption for all sensitive data, multi-factor authentication, and strict PDPA compliance.
+*   **Security**: End-to-end encryption, MFA, and strict PDPA compliance.
 *   **Accessibility**: WCAG 2.1 AA compliance.
 
-## Current Plan: Interactive Feature Cards
+## Current Plan: Create Placeholder Pages for Navigation
 
-To make the homepage more engaging, I will create a `feature-card` web component with a subtle hover effect. This will serve as the first step towards building a more interactive and component-based application.
+I will create placeholder pages for the remaining navigation links: "Legal," "Memorial," and "Support."
 
 ### Steps:
-1.  **Update `main.js`**:
-    *   Define a new custom element class named `FeatureCard` that extends `HTMLElement`.
-    *   Use the Shadow DOM to encapsulate the card's structure, including slots for the image, title, and description.
-    *   The component will take attributes for the image source, title, and description.
-2.  **Update `index.html`**:
-    *   Replace the existing `div` elements for the feature cards with the new `<feature-card>` custom element.
-    *   Pass the content for each card (image, title, description) via attributes.
-3.  **Update `style.css`**:
-    *   Modify the existing `.feature-card` styles to target the new `<feature-card>` element.
-    *   Add a transition and a `transform` property to create a subtle "lift" effect when the user hovers over a feature card.
+1.  **Create `legal.html`, `memorial.html`, and `support.html`**:
+    *   Create basic HTML structures for these pages.
+2.  **Create `legal.css`, `memorial.css`, and `support.css`**:
+    *   Create basic stylesheets for these pages.
+3.  **Update `index.html`, `planning.html`, `caregiving.html`, and `immediate-help.html`**:
+    *   Update the navigation to link to the new pages.

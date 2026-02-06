@@ -1,0 +1,12 @@
+/* construction.css */
+
+.construction-content {
+    padding: 6rem 2rem;
+    text-align: center;
+}
+
+.construction-content h1 {
+    font-family: var(--heading-font);
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
