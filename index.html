@@ -14,8 +14,9 @@
         <div class="logo">With You</div>
         <nav>
             <ul>
-                <li><a href="legal.html">Legal</a></li>
-                <li><a href="memorial.html">Memorial</a></li>
+                <li><a href="#legal">Legal</a></li>
+                <li><a href="#memorial">Memorial</a></li>
+                <li><a href="#about">About</a></li>
             </ul>
         </nav>
     </header>
@@ -25,27 +26,64 @@
             <div class="hero-content">
                 <h1>Plan with peace. Live with clarity. Leave with dignity.</h1>
                 <p>Your wishes, honored. Your loved ones, supported.</p>
-                <div class="hero-cta-group">
-                    <a href="#features" class="cta-button">Start Planning Now</a>
-                </div>
+                <a href="#legal" class="cta-button">Begin Your Plan</a>
             </div>
         </section>
 
-        <section id="features" class="features-grid">
-            <a href="legal.html" class="feature-link">
+        <section id="legal" class="detailed-features">
+            <div class="feature-header">
+                <h2>Legal & Administrative</h2>
+                <p>Our intuitive tools guide you through every step of the legal and administrative process, demystifying complex tasks and providing clarity when you need it most.</p>
+            </div>
+            <div class="features-grid">
                 <feature-card>
-                    <h3 slot="title">Legal & Admin Support</h3>
-                    <p slot="description">Create wills, manage digital assets, and connect with verified legal professionals.</p>
+                    <img slot="image" src="https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Person writing a will">
+                    <h3 slot="title">Create Your Will</h3>
+                    <p slot="description">Easily create a legally-sound will to protect your assets and ensure your wishes are followed.</p>
                 </feature-card>
-            </a>
-            <a href="memorial.html" class="feature-link">
                 <feature-card>
-                    <h3 slot="title">Funeral & Memorial</h3>
-                    <p slot="description">Design a personalized and meaningful celebration of life for yourself or a loved one.</p>
+                    <img slot="image" src="https://images.pexels.com/photos/209224/pexels-photo-209224.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Gavel and scales of justice">
+                    <h3 slot="title">Manage Assets</h3>
+                    <p slot="description">Organize and document your property, bank accounts, and other valuable assets.</p>
                 </feature-card>
-            </a>
+                <feature-card>
+                    <img slot="image" src="https://images.pexels.com/photos/5473956/pexels-photo-5473956.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Digital cloud with a lock">
+                    <h3 slot="title">Handle Digital Legacy</h3>
+                    <p slot="description">Securely manage your online accounts, social media profiles, and digital files.</p>
+                </feature-card>
+            </div>
         </section>
 
+        <section id="memorial" class="detailed-features alternate-bg">
+             <div class="feature-header">
+                <h2>Memorial Services</h2>
+                <p>Craft a personal and meaningful memorial that celebrates the story of a life well-lived. Our tools help you design a farewell that is both beautiful and healing for those left behind.</p>
+            </div>
+            <div class="features-grid">
+                <feature-card>
+                    <img slot="image" src="https://images.pexels.com/photos/267507/pexels-photo-267507.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Digital memorial on a tablet">
+                    <h3 slot="title">Left Digital Memorial</h3>
+                    <p slot="description">Create a beautiful online space for friends and family to share memories, photos, and stories.</p>
+                </feature-card>
+                <feature-card>
+                    <img slot="image" src="https://images.pexels.com/photos/196667/pexels-photo-196667.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Funeral service with flowers">
+                    <h3 slot="title">Plan Funeral Services</h3>
+                    <p slot="description">Thoughtfully plan a service that reflects the individual’s personality, values, and wishes.</p>
+                </feature-card>
+                <feature-card>
+                    <img slot="image" src="https://images.pexels.com/photos/327490/pexels-photo-327490.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Tree sapling being planted">
+                    <h3 slot="title">Arrange Legacy Tribute</h3>
+                    <p slot="description">Establish a lasting tribute through a scholarship, donation, or community project.</p>
+                </feature-card>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="about-content">
+                <h2>Our Mission</h2>
+                <p>End-of-life planning is an act of love. At "With You," we believe in empowering individuals and families to navigate this sensitive journey with compassion, clarity, and peace of mind. Our mission is to provide accessible, intuitive tools that demystify the process and ensure that every person's final wishes are honored with dignity. We're here to support you in creating a legacy that is as unique and meaningful as the life it represents.</p>
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -53,5 +91,6 @@
     </footer>
 
     <script src="main.js"></script>
+    <script src="feature-card.js"></script>
 </body>
 </html>
